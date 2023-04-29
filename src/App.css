@@ -1,0 +1,114 @@
+section{
+    display: flex;
+    width: 842px;
+    height: 653px;
+    background-color: var(--white);
+    place-content: center;
+    flex-direction: column;
+    border-radius: 20px 20px 120px 20px;
+    padding: 0 58px;
+}
+form{
+    display: grid;
+    position: relative;
+    grid-template-areas: 
+    "a b c"
+    "e f g"
+    "h i j";
+    padding-bottom: 50px; 
+    border-bottom: 2px solid var(--light-grey);
+}
+form #bd-day-label{
+    grid-area: a;
+}
+form #bd-day{
+    grid-area: e;
+}
+form #error-day{
+    grid-area: h;
+}
+form #bd-month-label{
+    grid-area: b;
+}
+form #bd-month{
+    grid-area: f;
+}
+for #error-month{
+    grid-area: i;
+}
+form #bd-year-label{
+    grid-area: c;
+}
+form #bd-year{
+    grid-area: g;
+}
+form #error-year{
+    grid-area: j;
+}
+form p{
+    padding-top: 0.25rem;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--white);
+}
+form #bd-submit{
+    grid-area: d;
+    position: absolute;
+    bottom: -46px;
+    right: 0;
+    color: var(--white);
+    background-color: var(--purple);
+    border: none;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+#bd-submit:hover{
+    background-color: var(--off-black);
+}
+/* Weights: 400i, 700, 800i */
+form label{
+    width: 120px;
+    font-weight: 400;
+    color: var(--smoke-grey);
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 0.25rem;
+}
+form input{
+    font-weight: 700;
+    width: 160px;
+    height: 72px;
+    border: 2px solid var(--light-grey);
+    border-radius: 5px;
+    padding: 24px 18px;
+    color: var(--off-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+}
+input:focus{
+    outline-color: var(--purple);
+    caret-color: var(--purple);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#time-elapsed{
+    display: flex;
+    flex-direction: column;
+}
+#time-elapsed p{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 80px;
+}
+#time-elapsed p span{
+    color: var(--purple);
+}
